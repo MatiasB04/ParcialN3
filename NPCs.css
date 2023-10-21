@@ -1,0 +1,101 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: white;
+}
+
+.galeria{
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 35px;
+    margin-bottom: 10px;
+
+}
+
+.galeria h1{
+    text-align: center;
+    margin:20px 0 15px 0;
+    font-weight: 300;
+}
+
+.linea{
+    border-top: 5px solid gray;
+    margin-bottom: 20px;
+}
+
+.contenedor-imagenes{
+    display:flex;
+    width: 85%;
+    margin: auto;
+    justify-content: space-around;/*Define como el navegador distribuye el espacio*/
+    flex-wrap: wrap; /*Pone las imagenes una abajo de la otra*/
+    border-radius:3px;
+}
+
+.contenedor-imagenes .imagen{
+    width: 32%;
+    position: relative;
+    height:250px;
+    margin-bottom:5px;
+    box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, .75)
+}
+.imagen img{
+    width: 100%; /*La imagen ocupa todo el contenedor*/
+    height:100%;
+    object-fit: cover; /*Hace que la imagen se vea mejor o no pierda resolucion*/
+}
+
+.overlay{
+    position: absolute;/*La posicion es absoluta para que el texto se ubique abajo de la imagen*/
+    bottom: 0;
+    left: 0;
+    background:rgba(128, 128, 128, 0.281) ;
+    width: 100%; /*Ocupa todo el ancho del contenedor*/
+    height: 0;
+    overflow: hidden;
+    transition: .5s ease; /*Cuando uno pasa el mouse realiza la animacion*/
+}
+
+.overlay h2{
+    color: #fff;
+    font-weight: 300;
+    font-size:30px;
+    position: absolute;
+    top: 50%;
+    left:50%;
+    text-align: center;
+    transform: translate(-50%, -50%);/*Centra el texto, en las posiciones de arriba y abajo*/
+}
+
+.imagen:hover .overlay{ /*Cuando el mouse pase por la imagen*/
+    height:100%;
+    cursor: pointer;/*Tipo de cursor que se muesta*/
+}
+
+@media screen and (max-width:1000px){
+    .contenedor-imagenes{
+        width: 95%;
+    }
+}
+
+@media screen and (max-width:700px){
+    .contenedor-imagenes{
+        width: 90%;
+    }
+    .contenedor-imagenes .imagen{
+        width: 48%;
+    }
+}
+
+@media screen and (max-width:450px){
+    h1{
+        font-size:22px;
+    }
+    .contenedor-imagenes{
+        width: 98%;
+    }
+    .contenedor-imagenes .imagen{
+        width: 80%;
+    }
+}

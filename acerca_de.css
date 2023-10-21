@@ -1,0 +1,37 @@
+.Titulo{background-color: transparent;
+    margin-top: 100px; /* MARGEN SUPERIOR */
+    margin-bottom: 100px; /* MARGEN INFERIOR */
+}
+
+.container-all{
+  
+
+    width: 100%;
+    max-width: 1000px;
+    margin: auto;
+    padding: 60px;
+    background: black;
+}
+
+
+.sub-title{
+    font-size: 30px;
+    font-weight: 400 bold;
+}
+
+.container-all img{
+    width: 300px;
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+.container-all p{
+    font-size: 25px;
+    font-weight: 300;
+    margin-top: 20px;
+}
+
+.Link{
+    background: transparent;
+}

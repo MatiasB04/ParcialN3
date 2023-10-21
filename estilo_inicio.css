@@ -47,3 +47,51 @@
         width: 100%;
     }
 }
+
+/* Para tener un ancho máximo debemos de establecer el width del DIV.delimitador */
+.delimitador{
+    width:800px;
+    margin:auto;
+    margin-top: 75px; /* ESPACIO */
+    margin-bottom: 75px; /* ESPACIO */
+}
+    
+/* El contenedor con el padding-top crea el tamaño del vídeo */
+.contenedor{
+    height:0px;
+    width:100%;
+    max-width:800px; /* Así establecemos el ancho máximo*/
+    padding-top:56.25%; /* Relación: 16/9 = 56.25% */
+    position:relative;
+}
+    
+/* El iframe se adapta al tamaño del contenedor */
+iframe{
+    position:absolute;
+    height:100%;
+    width:100%;
+    top:0px;
+    left:0px;
+}
+
+p_trailer {
+    font-size: 45px;
+    min-height: 8vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 25px;
+}
+
+p_gameplay {
+    font-size: 45px;
+    min-height: 8vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 100px;
+    padding-bottom: 25px;
+}
+
