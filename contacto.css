@@ -36,45 +36,26 @@ body {
 	color: #fff;
 }
 
-/* Estilos personalizados para input y textarea */
 .form-control {
-    border: 2px solid #000; /* Anula el borde de Bootstrap */
+	border: 2px solid #000;
+}
+.right button {
+	border: none;
+	border-radius: 0;
+	background: #252525;
+	width: 180px;
+	color: #fff;
+	padding: 15px 0;
+	display: inline-block;
+	font-size: 16px;
+	margin-top: 20px;
+	cursor: pointer;
+}
+.right button:hover{
+    background-color: #252525;
 }
 
-/* Estilos personalizados para botón */
-button {
-  border: 0;
-  background-image: linear-gradient(
-      150deg,
-      #9500ff,
-      #09f,
-      #00DDFF
-  );
-border-radius: 8px;
-color: #fff;
-display: flex;
-font-size: 18px;
-padding: 4px;
-cursor: pointer;
-transition: .3s;
-}
-
-button span {
-background-color: #111;
-padding: 16px 24px;
-border-radius: 6px;
-transition: .3s;
-}
-
-button:hover span {
-  background: none;
-}
-
-button :active {
-  transform: scale(0.9);
-}
-
-/*responsive*/
+/*RESPONSIVO*/
 
 @media (min-width:768px) and (max-width:991px){
     .right i {

@@ -82,6 +82,7 @@ p_trailer {
     align-items: center;
     justify-content: center;
     padding-bottom: 25px;
+    animation: fadeInCenter 6s ease-in-out; /* Nombre de la animación, duración, y tipo de temporización */
 }
 
 p_gameplay {
@@ -93,5 +94,85 @@ p_gameplay {
     justify-content: center;
     padding-top: 100px;
     padding-bottom: 25px;
+    animation: fadeInCenter 6s ease-in-out; /* Nombre de la animación, duración, y tipo de temporización */
 }
 
+@keyframes fadeInCenter {
+    0% { opacity: 0; transform: scale(0.5); }
+    100% { opacity: 1; transform: scale(1); }
+}
+
+elemento {
+    animation: fadeInCenter 1s ease-out;
+}
+
+
+button {
+    border: 0;
+    background-image: linear-gradient(
+        150deg,
+        red,
+        /* #09f, */
+        orange
+    );
+border-radius: 8px;
+color: #fff;
+display: flex;
+font-size: 18px;
+padding: 4px;
+cursor: pointer;
+transition: .3s;
+text-align: center; /* Alinea el texto en el centro */
+display: flex;
+justify-content: center; /* Centra horizontalmente el contenido */
+}
+
+
+button span {
+background-color: #111;
+padding: 16px 24px;
+border-radius: 6px;
+transition: .3s;
+}
+
+button:hover span {
+    background: none;
+}
+
+button :active {
+    transform: scale(0.9);
+}
+
+
+.delimitador {
+    text-align: center; /* Alinea el contenido en el centro horizontal */
+}
+
+button {
+    margin: 0 auto; /* Centra el botón horizontalmente en el contenedor */
+}
+
+button span {
+    background-color: #111;
+    padding: 16px 24px;
+    border-radius: 6px;
+    transition: 0.3s;
+    display: inline-block; /* Alinea el botón en el centro horizontalmente */
+}
+
+button:hover span {
+    background: none;
+}
+
+button:active {
+    transform: scale(0.9);
+}
+
+a.sin-subrayado {
+    text-decoration: none;
+  }
+
+  
+button {
+    margin: 0 auto 50px; /* Centra el botón horizontalmente y agrega espacio debajo */
+}
